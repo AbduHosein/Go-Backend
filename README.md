@@ -3,12 +3,17 @@
  Made from following this guide <https://medium.com/geekculture/full-stack-application-with-go-gin-react-and-mongodb-37b63ef71133>.
  Need to change the model and endpoints to serve needs for a project.
 
-# Getting it running
+# Prereq
 To start first make sure you have the latest versions of Node, npm, gin, etc (look at imports for files to "go get ..."). Additionally you'll need to create a .env file in the server directory of the structure:
 
 	PORT=5000
 	MONGODB_URL= <URL from a mongodb cluster>
 
+# How to run:
+Once your cluster is up and running, all prereqs are downloaded, and your .env file is formatted properly.
+In the ./server directory type:
+	
+	go run main.go
 
 # Data model (TBD)
 
