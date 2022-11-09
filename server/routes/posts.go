@@ -101,7 +101,7 @@ func GetPostById(c *gin.Context) {
 	c.JSON(http.StatusOK, posts)
 }
 
-// update a waiter's name for an order
+// update a username for a post
 func UpdateUsername(c *gin.Context) {
 	orderID := c.Params.ByName("id")
 	docID, _ := primitive.ObjectIDFromHex(orderID)
