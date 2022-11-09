@@ -66,7 +66,7 @@ func GetPosts(c *gin.Context) {
 	c.JSON(http.StatusOK, posts)
 }
 
-// get all posts by the username's name
+// get all posts by a username
 func GetPostsByUsername(c *gin.Context) {
 
 	username := c.Params.ByName("username")
@@ -86,7 +86,7 @@ func GetPostsByUsername(c *gin.Context) {
 	c.JSON(http.StatusOK, posts)
 }
 
-// get an post by its id
+// get a post by its id
 func GetPostById(c *gin.Context) {
 	postID := c.Params.ByName("id")
 	docID, _ := primitive.ObjectIDFromHex(postID)
@@ -162,7 +162,7 @@ func UpdatePost(c *gin.Context) {
 	c.JSON(http.StatusOK, result.ModifiedCount)
 }
 
-// delete an post given the id
+// delete a post given the id
 func DeletePost(c *gin.Context) {
 	postID := c.Params.ByName("id")
 	docID, _ := primitive.ObjectIDFromHex(postID)
