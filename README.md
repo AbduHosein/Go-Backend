@@ -7,7 +7,7 @@
 To start first make sure you have the latest versions of Node, npm, gin, etc (look at imports for files to "go get ..."). Additionally you'll need to create a .env file in the server directory of the structure:
 
 	PORT=5000
-	MONGO_URL=...From a mongodb cluster
+	MONGODB_URL= <URL from a mongodb cluster>
 
 
 # Data model (TBD)
