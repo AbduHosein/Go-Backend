@@ -15,7 +15,8 @@ In the ./server directory type:
 	
 	go run main.go
 
-# Data model (TBD)
+# Data models (TBD)
+## Post
 
 	ID          primitive.ObjectID `bson:"_id"`
 	Username    *string            `json:"username"`
@@ -24,8 +25,11 @@ In the ./server directory type:
 	Price       *float64           `json:"price"`
 	Description *string            `json:"description"`
 
+## User?
+
 # API endpoints (TBD)
-  
+
+## Posts  
   	//C
 	POST("/post/create", routes.AddPost)
 	
