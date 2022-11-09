@@ -5,7 +5,7 @@
 
 # Data model (TBD)
 
-ID          primitive.ObjectID `bson:"_id"`
+	ID          primitive.ObjectID `bson:"_id"`
 	Username    *string            `json:"username"`
 	Title       *string            `json:"title"`
 	Location    *string            `json:"location"`
@@ -14,14 +14,17 @@ ID          primitive.ObjectID `bson:"_id"`
 
 # API endpoints (TBD)
   
-  //C
+  	//C
 	POST("/post/create", routes.AddPost)
+	
 	//R
 	GET("/user/:username", routes.GetPostsByUsername)
 	GET("/posts", routes.GetPosts)
 	GET("/post/:id/", routes.GetPostById)
+	
 	//U
 	PUT("/user/update/:id", routes.UpdateUsername)
-  PUT("/post/update/:id", routes.UpdatePost)
+  	PUT("/post/update/:id", routes.UpdatePost)
+	
 	//D
 	DELETE("/post/delete/:id", routes.DeletePost)
