@@ -42,7 +42,7 @@ const Posts = () => {
             </Container>
         </div>
     );
-    //gets all the orders
+    //gets all the posts
     function getAllPosts(){
         var url = "http://localhost:5000/posts"
         axios.get(url, {
@@ -54,7 +54,7 @@ const Posts = () => {
         })
     }
 
-    //deletes a single order
+    //deletes a single post
     function deleteSinglePost(id){
         var url = "http://localhost:5000/post/delete/" + id
         axios.delete(url, {
