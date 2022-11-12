@@ -1,3 +1,10 @@
+# Dependencies
+Make sure you install node, npm, 
+in ./frontend directory install:
+  
+  npm install axios
+  npm install react-bootstrap@next bootstrap@5.1.0
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
