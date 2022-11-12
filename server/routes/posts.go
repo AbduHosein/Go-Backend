@@ -132,16 +132,19 @@ func UpdatePost(c *gin.Context) {
 	postID := c.Params.ByName("id")
 	docID, _ := primitive.ObjectIDFromHex(postID)
 	var ctx, cancel = context.WithTimeout(context.Background(), 100*time.Second)
+	defer cancel()
 	var post models.Post
 	if err := c.BindJSON(&post); err != nil {
 		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
 		return
 	}
+
 	validationErr := validate.Struct(post)
 	if validationErr != nil {
 		c.JSON(http.StatusBadRequest, gin.H{"error": validationErr.Error()})
 		return
 	}
+
 	result, err := postCollection.ReplaceOne(
 		ctx,
 		bson.M{"_id": docID},
@@ -157,8 +160,6 @@ func UpdatePost(c *gin.Context) {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
 		return
 	}
-
-	defer cancel()
 	c.JSON(http.StatusOK, result.ModifiedCount)
 }
 
