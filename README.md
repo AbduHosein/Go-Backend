@@ -4,7 +4,7 @@
  Need to change the model and endpoints to serve needs for a project.
 
 # Dependencies
-To start first make sure you have al the go dependencies you need to run the server (look at imports for files to "go get URL"). Additionally you'll need to create a .env file in the ./server directory of the structure:
+To start first make sure you have al the go dependencies you need to run the server (look at imports for files to "go get URL"). On my Windows machine I had to go get individually, but on my linux machine simplying running go run main.go installed the required dependencies. Additionally you'll need to create a .env file in the ./server directory of the structure:
 
 	PORT=5000
 	MONGODB_URL= <URL from a mongodb cluster>
