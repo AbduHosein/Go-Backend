@@ -1,10 +1,10 @@
-# Go-Backend
+# Server
 
  Made from following this guide <https://medium.com/geekculture/full-stack-application-with-go-gin-react-and-mongodb-37b63ef71133>.
  Need to change the model and endpoints to serve needs for a project.
 
-# Prereq
-To start first make sure you have the latest versions of Node, npm, gin, etc (look at imports for files to "go get ..."). Additionally you'll need to create a .env file in the server directory of the structure:
+# Dependencies
+To start first make sure you have al the go dependencies you need to run the server (look at imports for files to "go get URL"). Additionally you'll need to create a .env file in the ./server directory of the structure:
 
 	PORT=5000
 	MONGODB_URL= <URL from a mongodb cluster>
