@@ -1,6 +1,6 @@
 # Server
 
- Made from following this guide <https://medium.com/geekculture/full-stack-application-with-go-gin-react-and-mongodb-37b63ef71133>.
+ Adapted from following this guide <https://medium.com/geekculture/full-stack-application-with-go-gin-react-and-mongodb-37b63ef71133>.
  Need to change the model and endpoints to serve needs for a project.
 
 # Dependencies
